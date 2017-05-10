@@ -23,7 +23,6 @@ angular.module('usersController', ['usersService'])
 
 		User.create(vm.userData)
 			.then(function(response){
-				console.log(response);
 				vm.userData = {};
 				vm.message = response.data.message;
 
